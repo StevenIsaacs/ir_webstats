@@ -23,7 +23,7 @@ LIC_PRO_WC  = 7
 SORT_IRATING = 'irating'
 SORT_TIME = 'start_time'
 SORT_POINTS = 'points'
-ORDER_DESC  = 'desc' 
+ORDER_DESC  = 'desc'
 ORDER_ASC = 'asc'
 
 
@@ -57,6 +57,11 @@ URL_HOSTED_RESULTS = 'http://members.iracing.com/memberstats/member/GetPrivateSe
 URL_SELECT_SERIES = 'http://members.iracing.com/membersite/member/SelectSeries.do?&season=%s&view=undefined&nocache=%s'
 URL_SESSION_TIMES = 'http://members.iracing.com/membersite/member/GetSessionTimes'#T-m-d
 URL_SERIES_RACERESULTS = 'http://members.iracing.com/memberstats/member/GetSeriesRaceResults'
+URL_LEAGUE_DIRECTORY = 'http://members.iracing.com/membersite/member/GetLeagueDirectory'
+URL_LEAGUE_SEASONS = 'http://members.iracing.com/membersite/member/GetLeagueSeasons'
+URL_LEAGUE_SEASON_STANDINGS = 'http://members.iracing.com/membersite/member/GetLeagueSeasonStandings'
+URL_LEAGUE_SEASON_CALENDAR = 'http://members.iracing.com/membersite/member/GetLeagueCalendarBySeason'
+URL_SUBSESSION_RESULTS = 'http://members.iracing.com/membersite/member/GetSubsessionResults'
 
 URL_GET_EVENTRESULTS = 'http://members.iracing.com/membersite/member/GetEventResultsAsCSV?subsessionid=%s&simsesnum=%s&includeSummary=1' #simsesnum 0 race, -1 qualy or practice, -2 practice
 

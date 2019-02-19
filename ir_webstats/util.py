@@ -60,3 +60,22 @@ def parse(data):
 
 def clean(string):
     return unquote(string.replace('+', ' '))
+
+def convertIRMillisToTime(millis):
+     if millis < 0:
+        return "%s" % (millis)
+
+     seconds=(millis/10000)
+     ms=(millis-(seconds*10000))/10
+     if seconds < 60:
+        return "{0}.{1}".format(seconds, ms)
+
+     minutes=seconds/60
+     seconds=seconds-(minutes*60)
+     if minutes < 60:
+        return "{0}:{1}.{2}".format(minutes, seconds, ms)
+
+     hours=minutes/60
+     minutes=minutes-(hours*60)
+     return "{0}:{1}:{2}.{3}".format(hours, minutes, seconds, ms)
+     #return seconds, minutes, hours
